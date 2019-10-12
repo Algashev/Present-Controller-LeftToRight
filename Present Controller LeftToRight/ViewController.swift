@@ -9,12 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBAction func presentController(_ sender: Any) {
+        let detailViewController = DetailViewController(nibName: nil, bundle: nil)
+        detailViewController.modalPresentationStyle = .fullScreen
+        self.presentDetail(detailViewController)
     }
-
-
 }
 
